@@ -1,0 +1,29 @@
+.tp-container {
+   position: relative;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: #eee;
+   height: 100%;
+}
+
+.tp-section {
+   display: flex;
+   align-content: center;
+   align-items: center;
+   height: 6vh;
+   padding: 8px;
+   color: white;
+   font-size: 12px;
+   margin-top: 10px;
+   :hover{
+      cursor: pointer;
+   }
+
+}
+
+.side-nav {
+   background-color: #262626;
+   width: 20%;
+}

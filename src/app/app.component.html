@@ -1,14 +1,21 @@
 <app-header></app-header>
 <div style="height:95vh">
-<mat-sidenav-container class = "tp-container">
-  <mat-sidenav class="side-nav" mode = "side" [opened]="sidenavFlag">
-    <!-- <mat-icon (click)="toggleSidenav()">close</mat-icon> -->
-    <div *ngFor="let sidenavItem of sidenavLinks">
-     <section class = "tp-section" (click)="toPage(sidenavItem.path)" >
-        <span>{{sidenavItem.name}}</span>
-     </section>
-    </div>
-  </mat-sidenav>
-  <mat-sidenav-content>Main content</mat-sidenav-content>
-</mat-sidenav-container>
+    <mat-sidenav-container class="tp-container">
+        <mat-sidenav class="side-nav" mode="side" [opened]="sidenavFlag">
+            <!-- <mat-icon (click)="toggleSidenav()">close</mat-icon> -->
+            <div *ngFor="let sidenavItem of sidenavLinks">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="sidenavItem.path" routerLinkActive="active">
+                        {{sidenavItem.name}}
+                    </a>
+                </li>
+            </div>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <div style="display: flex; height: 100%;">
+                <router-outlet></router-outlet>
+                <router-outlet name="sidebar"></router-outlet>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
 </div>

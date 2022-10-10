@@ -1,0 +1,20 @@
+<div class="upload-section">
+  <h4 class="title-section">Upload Data</h4>
+  <div class="dropzone">
+    <input type="file" #fileDropRef id="fileDropRef" multiple (change)="onFileDropped($event.target.files)" />
+    <img src="" alt="">
+    <h3>Select or Drop files here</h3>
+    <label for="fileDropRef">Browse for files</label>
+    <div class="files-list">
+      <div class="single-file" *ngFor="let file of files; let i=index">
+        <img src="">
+        <div class="info">
+          <p class="name">
+            {{file?.name}}
+          </p>
+        </div>
+        <img src="" class="delete" width="20px" alt="file" (click)="deleteFile(i)">
+      </div>
+    </div>
+  </div>
+</div>

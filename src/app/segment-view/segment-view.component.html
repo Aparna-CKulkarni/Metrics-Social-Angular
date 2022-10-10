@@ -1,3 +1,90 @@
-<p>
-  segment-view works!
-</p>
+<div class="card-layout">
+  <span>
+    <mat-card class="single-card-section">
+      <mat-card-header>
+        <mat-card-title class="card-title">Segment Details</mat-card-title>
+      </mat-card-header>
+      <mat-card-content style="margin-top:2rem">
+        <div class="list">
+          <span class="item-key">Count:</span>
+          <span class="item-value"> 10</span>
+        </div>
+        <div class="list">
+          <span class="item-key">Avg. Age:</span>
+          <span class="item-value"></span>
+        </div>
+        <div class="list">
+          <span class="item-key">Avg. Income:</span>
+          <span class="item-value"></span>
+        </div>
+        <div class="list">
+          <span class="item-key">Gender</span>
+          <span class="item-value"></span>
+        </div>
+        <div class="list">
+          <span class="item-key">Education</span>
+          <span class="item-value"></span>
+        </div>
+        <div class="list">
+          <span class="item-key">Life Stage</span>
+          <span class="item-value"></span>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </span>
+  <span>
+    <div class="row-cards">
+      <mat-card class="double-card-section">
+        <mat-card-header>
+          <mat-card-title class="card-title">Anchoring Bias</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="double-card-section">
+        <mat-card-header>
+          <mat-card-title class="card-title">Availability Heuristic</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="double-card-section">
+        <mat-card-header>
+          <mat-card-title class="card-title">Fast & Frugal Heuristic</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <br>
+    <div class="row-cards">
+      <mat-card class="double-card-section">
+        <mat-card-header>
+          <mat-card-title class="card-title">Innovator Index</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <!-- <canvas baseChart 
+          [data]="doughnutChartData"
+          [labels]="doughnutChartLabels"
+          [chartType]="doughnutChartType">
+        </canvas> -->
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="double-card-section">
+        <mat-card-header>
+          <mat-card-title class="card-title">Risk Aversion Index</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="double-card-section">
+        <mat-card-header>
+          <mat-card-title class="card-title">Social Influence Index</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </span>
+</div>

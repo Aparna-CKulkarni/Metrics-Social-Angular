@@ -8,7 +8,7 @@
    height: 100%;
 }
 
-.tp-section {
+.nav-item {
    display: flex;
    align-content: center;
    align-items: center;
@@ -17,7 +17,8 @@
    color: white;
    font-size: 12px;
    margin-top: 10px;
-   :hover{
+
+   :hover {
       cursor: pointer;
    }
 
@@ -26,4 +27,32 @@
 .side-nav {
    background-color: #262626;
    width: 20%;
+}
+
+.table-section {
+   margin: 20px;
+}
+
+.mat-table {
+   background-color: #eee;
+   width: 100%;
+   border: 0.5px solid white;
+   color: black;
+}
+
+.mat-cell,
+.mat-header-cell {
+   color: black;
+   text-align: center;
+   border: 1px solid white;
+}
+
+mat-sidenav-content {
+   width: 100%;
+   background-color: #A8D08C;
+}
+
+a{
+   text-decoration: none;
+   color: white;
 }

@@ -2,3 +2,22 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.upload-section{
+   margin: 3rem;
+   border-radius: 3rem;
+   border: 1px solid #4295D1;
+   width: 70vw;
+   height: 80%;
+   background-color: white;
+}
+
+.title-section{
+   color: #4295D1;
+   text-align: center;
+}
+
+.card-title{
+   color: #4265d1;
+   font-size: 14px !important;
+}

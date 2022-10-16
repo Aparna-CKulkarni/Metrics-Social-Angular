@@ -7,7 +7,7 @@
 }
 
 .mat-table {
-    background-color: #eee;
+    background-color: #bbcced;
     width: 100%;
     border: 0.5px solid white;
     color: black;
@@ -17,6 +17,7 @@
 .mat-header-cell {
     color: black;
     text-align: center;
+    font-size: medium;
     border: 1px solid white;
 }
 
@@ -25,3 +26,16 @@
     height: 10px;
     border-radius: 5px;
 }
+
+tr.mat-header-row{
+    background-color: #4472C4;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #dfe5f7;
+}
+
+// tr:nth-child(odd) {
+//     background-color: #8CA8DB;
+// }

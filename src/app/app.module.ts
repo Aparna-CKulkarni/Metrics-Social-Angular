@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule, MatFormFieldModule, MatIconModule, MatProgressBarModule, MatSelectModule, MatSidenavModule, MatTableModule, MatToolbarModule } from '@angular/material';
+import { MatCardModule, MatDividerModule, MatFormFieldModule, MatIconModule, MatProgressBarModule, MatSelectModule, MatSidenavModule, MatTableModule, MatToolbarModule } from '@angular/material';
 import { HeaderComponent } from './header/header.component';
 import { SegmentViewComponent } from './segment-view/segment-view.component';
 import { BiasesViewComponent } from './biases-view/biases-view.component';
@@ -16,10 +16,11 @@ import { UploadDataComponent } from './upload-data/upload-data.component';
 import { SelectMetricsComponent } from './select-metrics/select-metrics.component';
 import { GenerateMetricsComponent } from './generate-metrics/generate-metrics.component';
 import { FormsModule } from '@angular/forms';
+import { SelectionActionComponent } from './selection-action/selection-action.component';
   
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, SegmentViewComponent, BiasesViewComponent, CustomerViewComponent, DashboardComponent, ChooseIndustryComponent, SideBarComponent, UploadDataComponent, SelectMetricsComponent, GenerateMetricsComponent
+    AppComponent, HeaderComponent, SegmentViewComponent, BiasesViewComponent, CustomerViewComponent, DashboardComponent, ChooseIndustryComponent, SideBarComponent, UploadDataComponent, SelectMetricsComponent, GenerateMetricsComponent, SelectionActionComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +34,8 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatSelectModule,
     FormsModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

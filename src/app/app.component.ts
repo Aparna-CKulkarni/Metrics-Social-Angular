@@ -36,29 +36,49 @@ export class AppComponent {
   sidenavFlag = true;
   sidenavLinks = [
     {
-      path: 'segment-view',
-      name: "Segment View"
+      path: 'dashboard',
+      name: "Main Menu"
     },
     {
-      path: 'customer-view',
-      name: "Customer View"
+      path: 'choose-industry',
+      name: "Choose Industry"
+    },
+    {
+      path: 'select-biases',
+      name: "Select Biases"
+    },
+    {
+      path: 'segment-view',
+      name: "Segment View"
     },
     {
       path: 'biases-view',
       name: "Biases View"
     },
     {
+      path: 'customer-view',
+      name: "Customer View"
+    },
+    {
       path: 'dashboard',
       name: "Dashboard"
+    },
+    {
+      path: 'select-customer',
+      name: "Select Customers"
+    },
+    {
+      path: 'downloads',
+      name: "Downloads"
+      // children:[
+      //   {path: }
+      // ]
     },
     {
       path: 'upload-data',
       name: "Upload Data"
     },
-    {
-      path: 'choose-industry',
-      name: "Choose Industry"
-    },
+    
     {
       path: 'select-metrics',
       name: "Select Metrics"
@@ -66,6 +86,10 @@ export class AppComponent {
     {
       path: 'generate-metrics',
       name: "Generate Metrics"
+    },
+    {
+      path: 'selection-action',
+      name: "Selection of Action"
     }
   ];
 

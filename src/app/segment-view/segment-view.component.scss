@@ -1,9 +1,9 @@
 .single-card-section {
     margin: 10px;
     background-color: #eee;
+    background: linear-gradient(to bottom, #ffffff, #cfedba);
     height: 90%;
     width: 15vw;
-    box-shadow: 5px 5px 5px 5px #A8D08C;
 }
 
 .double-card-section {
@@ -12,7 +12,8 @@
     height: 90%;
     width: 15vw;
     box-shadow: 5px 5px 5px 5px #A8D08C;
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    background: linear-gradient(135deg, #ffffff, #cfedba);
+}
 
 .card-layout {
     margin: 10px;
@@ -27,17 +28,37 @@
     height: 45%;
 }
 
-.list{
+.list {
     margin: 3rem 1rem;
 }
 
-.item-key{
+.item-key {
     color: #4295D1;
     font-size: 14px;
 }
 
-.item-value{
+.item-value {
     color: #4295D1;
     font-size: 14px;
     float: right;
+}
+
+.mat-divider {
+    display: block;
+    margin: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #f44336;
+    border-top-width: 0.22rem;
+}
+
+.mat-card .mat-divider-horizontal {
+    position: absolute;
+    left: 22%;
+    width: 50%;
+}
+
+.card-title{
+    margin-left: 1.2rem;
+
 }

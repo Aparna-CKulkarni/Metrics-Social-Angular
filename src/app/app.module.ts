@@ -16,11 +16,12 @@ import { UploadDataComponent } from './upload-data/upload-data.component';
 import { SelectMetricsComponent } from './select-metrics/select-metrics.component';
 import { GenerateMetricsComponent } from './generate-metrics/generate-metrics.component';
 import { FormsModule } from '@angular/forms';
-import { SelectionActionComponent } from './selection-action/selection-action.component';
+import { LoginComponent } from './login/login.component';
+import { MenuComponent } from './menu/menu.component';
   
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, SegmentViewComponent, BiasesViewComponent, CustomerViewComponent, DashboardComponent, ChooseIndustryComponent, SideBarComponent, UploadDataComponent, SelectMetricsComponent, GenerateMetricsComponent, SelectionActionComponent
+    AppComponent, HeaderComponent, SegmentViewComponent, BiasesViewComponent, CustomerViewComponent, DashboardComponent, ChooseIndustryComponent, SideBarComponent, UploadDataComponent, SelectMetricsComponent, GenerateMetricsComponent, MenuComponent, LoginComponent
   ],
   imports: [
     BrowserModule,

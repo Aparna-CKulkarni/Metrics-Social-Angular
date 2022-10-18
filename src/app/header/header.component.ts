@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.title = 'Segment View'
+    // this.title = 'Segment View'
   }
 
 }

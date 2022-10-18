@@ -36,7 +36,11 @@ export class AppComponent {
   sidenavFlag = true;
   sidenavLinks = [
     {
-      path: 'dashboard',
+      path: 'login',
+      name: "Login"
+    },
+    {
+      path: 'menu',
       name: "Main Menu"
     },
     {
@@ -86,10 +90,6 @@ export class AppComponent {
     {
       path: 'generate-metrics',
       name: "Generate Metrics"
-    },
-    {
-      path: 'selection-action',
-      name: "Selection of Action"
     }
   ];
 

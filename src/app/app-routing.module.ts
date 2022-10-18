@@ -5,9 +5,10 @@ import { ChooseIndustryComponent } from './choose-industry/choose-industry.compo
 import { CustomerViewComponent } from './customer-view/customer-view.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GenerateMetricsComponent } from './generate-metrics/generate-metrics.component';
+import { LoginComponent } from './login/login.component';
+import { MenuComponent } from './menu/menu.component';
 import { SegmentViewComponent } from './segment-view/segment-view.component';
 import { SelectMetricsComponent } from './select-metrics/select-metrics.component';
-import { SelectionActionComponent } from './selection-action/selection-action.component';
 import { UploadDataComponent } from './upload-data/upload-data.component';
 
 const routes: Routes = [
@@ -49,8 +50,12 @@ const routes: Routes = [
     component: GenerateMetricsComponent
   },
   {
-    path: 'selection-action',
-    component: SelectionActionComponent
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'menu',
+    component: MenuComponent
   }
 ];
 

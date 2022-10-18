@@ -1,28 +1,45 @@
-.single-card-section {
-    margin: 10px;
-    background-color: #eee;
-    box-shadow: #eee;
-    height: 90%;
-    width: 15vw;
-}
 
-.double-card-section {
-    margin: 10px;
-    background-color: #eee;
-    box-shadow: #eee;
-    height: 90%;
-    width: 15vw;
-}
 
-.card-layout {
-    margin: 10px;
-    height: 98%;
+
+
+.table-section {
+    height: 95%;
     display: flex;
-    overflow-y: hidden;
-    width: 98%;
+    overflow: auto;
+    width: 75vw;
+    margin: 1.5rem;
 }
 
-.row-cards {
-    display: flex;
-    height: 45%;
+.mat-table {
+    background-color: #bbcced;
+    width: 100%;
+    border: 0.5px solid white;
+    color: black;
 }
+
+.mat-cell,
+.mat-header-cell {
+    color: black;
+    text-align: center;
+    font-size: medium;
+    border: 1px solid white;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+tr.mat-header-row{
+    background-color: #4472C4;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #dfe5f7;
+}
+
+// tr:nth-child(odd) {
+//     background-color: #8CA8DB;
+// }

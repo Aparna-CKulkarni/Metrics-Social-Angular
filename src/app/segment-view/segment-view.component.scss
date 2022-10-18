@@ -28,6 +28,10 @@
     height: 45%;
 }
 
+.list-section{
+    margin-top:2rem;
+}
+
 .list {
     margin: 3rem 1rem;
 }
@@ -35,6 +39,7 @@
 .item-key {
     color: #4295D1;
     font-size: 14px;
+    font-style: italic;
 }
 
 .item-value {
@@ -61,4 +66,10 @@
 .card-title{
     margin-left: 1.2rem;
 
+}
+
+.progress-bar-image{
+    width: 160px;
+    margin-top: 3rem;
+    margin-left: 10px;
 }

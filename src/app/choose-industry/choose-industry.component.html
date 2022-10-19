@@ -1,17 +1,17 @@
 <div class="upload-section">
-<form class="form-section">
   <h4 class="h4">Select Industry </h4>
-  <mat-form-field appearance="outline">
-    <mat-label >Industry</mat-label>
-    <mat-select [(ngModel)]="selectedValue" name="industry">
-      <mat-option *ngFor="let industry of industries" [value]="industry.value">
-        {{food.viewValue}}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
-  
-  
-  
- 
-</form>
+  <form class="form-section">
+    <mat-form-field appearance="outline">
+      <mat-label>Industry</mat-label>
+      <mat-select name="industry">
+        <mat-option *ngFor="let industry of industryList" [value]="industry.value">
+          {{industry.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+
+
+  </form>
 </div>

@@ -1,4 +1,39 @@
-.login-fields{
-    left: 25%;
+.text-center{
+    text-align: center;
     width: 100%;
 }
+.example-container{
+    height: 50%;
+    width: 35%;
+    text-align: left;
+}
+.d-flex-center{
+    margin: 1.5rem;
+    // background-color: grey;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mat-form-field{
+    width: 100%;
+}
+.mt-top{
+    margin-top: 30px;
+}
+.mt-top-2{
+    margin-top: 10px;
+}
+
+.label{
+    color: black;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container{
+    width: 60%;
+  }

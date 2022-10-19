@@ -26,7 +26,8 @@ export class AppComponent {
     {
       path: 'biases-view',
       name: "Biases View"
-    }, {
+    }, 
+    {
       path: 'customer-view',
       name: "Customer View"
     },
@@ -34,17 +35,9 @@ export class AppComponent {
       path: 'choose-industry',
       name: "Choose Industry"
     },
-   
     {
       path: 'select-biases',
       name: "Select Biases"
-    },
-    
-   
-   
-    {
-      path: 'dashboard',
-      name: "Dashboard"
     },
     {
       path: 'select-customer',
@@ -57,11 +50,6 @@ export class AppComponent {
       //   {path: }
       // ]
     },
-    {
-      path: 'upload-data',
-      name: "Upload Data"
-    },
-    
     {
       path: 'select-metrics',
       name: "Select Metrics"

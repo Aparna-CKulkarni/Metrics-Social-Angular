@@ -1,39 +1,36 @@
-.text-center{
-    text-align: center;
+.mat-form-field {
     width: 100%;
 }
-.example-container{
-    height: 50%;
-    width: 35%;
-    text-align: left;
-}
-.d-flex-center{
-    margin: 1.5rem;
-    // background-color: grey;
-    width: 60vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.mat-form-field{
-    width: 100%;
-}
-.mt-top{
+
+.mt-top {
     margin-top: 30px;
 }
-.mt-top-2{
+
+.mt-top-2 {
     margin-top: 10px;
 }
 
-.label{
-    color: black;
+.label {
+    color: #4295D1;
+    margin-top: 1.2rem;
+    margin-right: 0.8rem;
 }
 
 .row {
     display: flex;
     flex-direction: row;
-  }
+}
 
-  .container{
-    width: 60%;
-  }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.login-fields {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}

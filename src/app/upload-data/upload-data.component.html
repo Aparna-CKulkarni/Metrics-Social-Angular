@@ -4,7 +4,7 @@
     <input type="file" #fileDropRef id="fileDropRef" multiple (change)="onFileDropped($event.target.files)" />
     <img src="" alt="">
     <h3>Select or Drop files here</h3>
-    <label for="fileDropRef">Browse for files</label>
+    <label class="label" for="fileDropRef">Browse for files</label>
     <div class="files-list">
       <div class="single-file" *ngFor="let file of files; let i=index">
         <img src="">
@@ -13,8 +13,12 @@
             {{file?.name}}
           </p>
         </div>
-        <img src="" class="delete" width="20px" alt="file" (click)="deleteFile(i)">
+        <mat-icon class="delete" (click)="deleteFile(i)">delete_outline</mat-icon>
       </div>
     </div>
   </div>
+   <span *ngIf="files && files.length">
+      <!-- <mat-icon class="next-arrow" (click)="navigatePage('choose-industry')">arrow_forward</mat-icon> -->
+    <button (click)="navigatePage('choose-industry')">Next</button>
+    </span>
 </div>

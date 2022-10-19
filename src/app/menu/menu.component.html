@@ -1,13 +1,13 @@
 <div class="upload-section">
     <h4 class="title-section">What would you like to do today?</h4>
     <div class="images">
-        <img src="../../assets/images/metrics.svg.svg" class="img-class"/>
-        <img src="../../assets/images/new-metrics.svg.svg" class="img-class"/>
-        <img src="../../assets/images/new-metrics.svg.svg" class="img-class"/>
+        <img src="../../assets/images/metrics.svg.svg" class="img-class links" (click)="navigatePage('segment-view')" />
+        <img src="../../assets/images/new-metrics.svg.svg" class="img-class links" (click)="navigatePage('upload-data')"/>
+        <img src="../../assets/images/change-settings.png" class="img-class links" (click)="navigatePage('settings')"/>
     </div>
     <div class="text">
-        <p>Explore existing Metrics</p>
-        <p>Explore existing Metrics</p>
-        <p>Explore existing Metrics</p>
+        <p class="links" (click)="navigatePage('segment-view')">Explore existing Metrics</p>
+        <p class="links" (click)="navigatePage('upload-data')">Explore existing Metrics</p>
+        <p class="links" (click)="navigatePage('settings')">Change Settings</p>
     </div>
   </div>

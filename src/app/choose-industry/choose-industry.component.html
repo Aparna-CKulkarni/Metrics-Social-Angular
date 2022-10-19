@@ -1,11 +1,17 @@
 <div class="upload-section">
-  <h4 class="title-section">Select Industry</h4>
-  <mat-form-field appearance="fill">
-    <mat-label>Choose one</mat-label>
-    <mat-select [(ngModel)]="selected">
-      <mat-option>Clear</mat-option>
-      <mat-option value="valid">Valid option</mat-option>
-      <mat-option value="invalid">Invalid option</mat-option>
+<form class="form-section">
+  <h4 class="h4">Select Industry </h4>
+  <mat-form-field appearance="outline">
+    <mat-label >Industry</mat-label>
+    <mat-select [(ngModel)]="selectedValue" name="industry">
+      <mat-option *ngFor="let industry of industries" [value]="industry.value">
+        {{food.viewValue}}
+      </mat-option>
     </mat-select>
   </mat-form-field>
+  
+  
+  
+ 
+</form>
 </div>

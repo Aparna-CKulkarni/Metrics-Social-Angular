@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule, MatDividerModule, MatFormFieldModule, MatIconModule, MatProgressBarModule, MatSelectModule, MatSidenavModule, MatTableModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatDividerModule, MatFormFieldModule, MatIconModule, MatInputModule, MatProgressBarModule, MatSelectModule, MatSidenavModule, MatTableModule, MatToolbarModule } from '@angular/material';
 import { HeaderComponent } from './header/header.component';
 import { SegmentViewComponent } from './segment-view/segment-view.component';
 import { BiasesViewComponent } from './biases-view/biases-view.component';
@@ -15,13 +15,14 @@ import { SideBarComponent } from './shared/side-bar/side-bar.component';
 import { UploadDataComponent } from './upload-data/upload-data.component';
 import { SelectMetricsComponent } from './select-metrics/select-metrics.component';
 import { GenerateMetricsComponent } from './generate-metrics/generate-metrics.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
   
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, SegmentViewComponent, BiasesViewComponent, CustomerViewComponent, DashboardComponent, ChooseIndustryComponent, SideBarComponent, UploadDataComponent, SelectMetricsComponent, GenerateMetricsComponent, MenuComponent, LoginComponent
+    AppComponent, HeaderComponent, SegmentViewComponent, BiasesViewComponent, CustomerViewComponent, DashboardComponent, ChooseIndustryComponent, SideBarComponent, UploadDataComponent, SelectMetricsComponent,
+    GenerateMetricsComponent, MenuComponent, LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +37,11 @@ import { MenuComponent } from './menu/menu.component';
     MatSelectModule,
     FormsModule,
     MatProgressBarModule,
-    MatDividerModule
+    MatDividerModule,
+    MatButtonModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

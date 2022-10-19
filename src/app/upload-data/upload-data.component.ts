@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-upload-data',
@@ -7,27 +8,8 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class UploadDataComponent implements OnInit {
   files: any[] =[];
-  @HostListener('dragover' ['$event']) onDragOver(event){
-    console.log('over')
-    event.preventDefault();
-    event.stopPropogation();
-  }
 
-  @HostListener('dragleave' ['$event']) onDragLeave(event){
-    console.log('leave')
-
-    event.preventDefault();
-    event.stopPropogation();
-  }
-
-  @HostListener('drop' ['$event']) onDrop(event){
-    console.log('drop')
-
-    event.preventDefault();
-    event.stopPropogation();
-  }
-
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -40,6 +22,10 @@ export class UploadDataComponent implements OnInit {
 
   deleteFile(index){
       this.files.pop();
+  }
+
+  navigatePage(path){
+    this.router.navigate([path]);
   }
 
 }

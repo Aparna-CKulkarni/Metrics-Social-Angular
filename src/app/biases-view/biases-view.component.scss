@@ -48,19 +48,29 @@
     width: 50%;
 }
 
+
 .card-title{
    
     margin-left: 3rem;
 
+    border-bottom: 4px solid red;
+    
+    line-height: 4;
+    padding: 1 1 1px;
+
 }
+
+
 .images{
 
 margin-left:40%;
 }
 .Anchoring-bias1{
+    
     margin-top: 40px;
     text-align: center;
     font-size: 50px;
+    font-weight :bold;
     color:rgb(255, 0, 0);
 }
 .Anchoring-bias2{

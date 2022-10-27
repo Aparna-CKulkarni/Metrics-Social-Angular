@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-choose-industry',
@@ -7,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChooseIndustryComponent implements OnInit {
   industryList;
+  selectedIndustry;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.industryList =[
@@ -18,15 +20,15 @@ export class ChooseIndustryComponent implements OnInit {
       },
       {
         name: 'Advertising',
-        value: ''
+        value: 'advertising'
       },
       {
         name: 'Manufacturing',
-        value: ''
+        value: 'manufacturing'
       }, 
       {
         name: 'IT',
-        value: ''
+        value: 'it'
       }, 
       {
         name: ' Healthcare',
@@ -63,4 +65,7 @@ export class ChooseIndustryComponent implements OnInit {
     ]
   }
 
+  navigatePage(){
+    this.router.navigate([''])
+  }
 }

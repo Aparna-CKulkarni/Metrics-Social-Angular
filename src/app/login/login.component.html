@@ -1,5 +1,5 @@
-<div class="upload-section">
-  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+<div class="login-section">
+  <form [formGroup]="loginForm" novalidate>
     <div class="container">
       <div class="login-fields">
         <mat-form-field appearance="outline">
@@ -27,7 +27,7 @@
         </mat-form-field>
       </div>
     <div>
-      <button [disabled]="!loginForm.valid" mat-raised-button color="primary" mat-button>Sign In</button>
+      <button [disabled]="!loginForm.valid" mat-raised-button color="primary" mat-button (click)="onSubmit()">Sign In</button>
     </div>
   </div>
   </form>

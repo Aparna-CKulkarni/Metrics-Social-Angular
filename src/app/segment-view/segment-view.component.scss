@@ -4,6 +4,7 @@
     background: linear-gradient(to bottom, #ffffff, #cfedba);
     height: 90%;
     width: 15vw;
+    box-shadow: none !important;
 }
 
 .double-card-section {
@@ -11,8 +12,9 @@
     background-color: #eee;
     height: 90%;
     width: 15vw;
-    box-shadow: 5px 5px 5px 5px #A8D08C;
     background: linear-gradient(135deg, #ffffff, #cfedba);
+    box-shadow: none !important;
+
 }
 
 .card-layout {

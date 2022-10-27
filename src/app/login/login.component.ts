@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 
@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
   password: string = "";
   show: boolean = false;
   loginForm: FormGroup | any;
+  @Output() loginFormEmitter= new EventEmitter();
 
   constructor(private router:Router) {
     this.loginForm = new FormGroup({
@@ -30,13 +31,9 @@ export class LoginComponent implements OnInit {
     if (!this.loginForm.valid) {
       return;
     }
-    localStorage.setItem('user', this.loginForm.value)
-    this.router.navigate(['/home'])
-  }
-  clear() {
-    this.username = "";
-    this.password = "";
-    this.show = true;
+    localStorage.setItem('user', this.loginForm.value);
+    this.loginFormEmitter.emit('loggedIn');
+    this.router.navigate(['/menu']);
   }
 
 }

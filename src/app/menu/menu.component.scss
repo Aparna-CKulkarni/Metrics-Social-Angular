@@ -20,3 +20,18 @@
     justify-content: space-around;
     color: #4295D1;
 }
+
+.mat-divider {
+    display: block;
+    margin: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #f44336;
+    border-top-width: 0.22rem;
+}
+
+.mat-card .mat-divider-horizontal {
+    position: absolute;
+    left: 22%;
+    width: 50%;
+}

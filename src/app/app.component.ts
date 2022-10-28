@@ -23,7 +23,7 @@ export class AppComponent {
     {
       path: 'biases-view',
       name: "Biases View"
-    }, 
+    },
     {
       path: 'customer-view',
       name: "Customer View"
@@ -40,24 +40,20 @@ export class AppComponent {
       // ]
     },
     {
-      path: 'select-metrics',
-      name: "Select Metrics"
-    },
-    {
       path: 'generate-metrics',
       name: "Generate Metrics"
     }
   ];
 
   displayedColumns: string[] = ['custId', 'custName', 'age', 'income', 'gender', 'metric1', 'metric2', 'metric3'];
-  
 
-  constructor(private router: Router){}
 
-  checkLoginDetails(){
+  constructor(private router: Router) { }
+
+  checkLoginDetails() {
     this.loggedIn = true;
   }
-  
+
   // toggleSidenav(){
   //   this.sidenavFlag = !this.sidenavFlag;
   // }

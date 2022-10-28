@@ -32,40 +32,24 @@ export class ChooseIndustryComponent implements OnInit {
       }, 
       {
         name: ' Healthcare',
-        value: ''
+        value: 'healthcare'
       }, 
       {
         name: 'Telecom',
-        value: ''
+        value: 'telecom'
       }, 
       {
         name: 'Media',
-        value: ''
+        value: 'media'
       }, 
       {
         name: 'BFSI',
-        value: ''
-      }, 
-      {
-        name: 'Advertising Industry',
-        value: ''
-      }, 
-      {
-        name: 'Advertising Industry',
-        value: ''
-      }, 
-      {
-        name: ' Industry',
-        value: ''
-      }, 
-      {
-        name: '',
-        value: ''
+        value: 'bfsi'
       }
     ]
   }
 
-  navigatePage(){
-    this.router.navigate([''])
+  navigatePage(path){
+    this.router.navigate([path])
   }
 }

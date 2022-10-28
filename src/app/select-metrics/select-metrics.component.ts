@@ -7,62 +7,62 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectMetricsComponent implements OnInit {
   metricsList;
+  selectedIndustry;
+
   constructor() { }
 
   ngOnInit() {
-    this.metricsList =[
+    this.metricsList = [
       {
         name: '',
         value: ''
       },
       {
         name: 'Metrics',
-        value: ''
+        value: 'metrics'
       },
       {
         name: 'Anchor Bias',
-        value: ''
-      }, 
+        value: 'anchorBias'
+      },
       {
         name: 'IT',
         value: ''
-      }, 
+      },
       {
         name: ' Healthcare',
         value: ''
-      }, 
+      },
       {
         name: 'Telecom',
         value: ''
-      }, 
+      },
       {
         name: 'Media',
         value: ''
-      }, 
+      },
       {
         name: 'BFSI',
         value: ''
-      }, 
+      },
       {
         name: 'Advertising Industry',
         value: ''
-      }, 
+      },
       {
         name: 'Advertising Industry',
         value: ''
-      }, 
+      },
       {
         name: ' Industry',
         value: ''
-      }, 
+      },
       {
         name: '',
         value: ''
       }
     ]
   }
-
-  
-  }
+}
 
 

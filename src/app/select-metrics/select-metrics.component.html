@@ -1,3 +1,24 @@
 <div class="upload-section">
+    <h4 class="h4">Select Metrics for Biases & Heuristics
+      <hr class="line">
+    </h4>
+    
+  <form class="form-section">
+    <mat-form-field appearance="outline">
+      <mat-label>Metrics for Biases & Heuristics
+      </mat-label>
+      <mat-select name="metrics">
+        <mat-option *ngFor="let metrics of metricsList" [value]="metrics.value">
+          {{metrics.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+
+
+  </form>
+  <div class="bottomline"> Use Recommended Metrics for Selected Industry
+  </div>
 
 </div>

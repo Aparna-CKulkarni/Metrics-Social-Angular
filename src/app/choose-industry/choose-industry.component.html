@@ -5,15 +5,15 @@
   <form class="form-section">
     <mat-form-field appearance="outline">
       <mat-label>Industry</mat-label>
-      <mat-select name="industry">
+      <mat-select name="industry" [(ngModel)]="selectedIndustry">
         <mat-option *ngFor="let industry of industryList" [value]="industry.value">
           {{industry.name}}
         </mat-option>
       </mat-select>
     </mat-form-field>
-
-
-
-
   </form>
+  <span *ngIf="selectedIndustry">
+    <!-- <mat-icon class="next-arrow" (click)="navigatePage('choose-industry')">arrow_forward</mat-icon> -->
+    <button mat-button class="next-button" (click)="navigatePage('select-metrics')">Next</button>
+  </span>
 </div>

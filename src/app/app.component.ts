@@ -9,12 +9,9 @@ import { Router } from '@angular/router';
 
 export class AppComponent {
   title = 'Metrics-Social-Angular';
+  loggedIn: boolean = false;
   sidenavFlag = true;
   sidenavLinks = [
-    {
-      path: 'login',
-      name: "Login"
-    },
     {
       path: 'menu',
       name: "Main Menu"
@@ -26,18 +23,10 @@ export class AppComponent {
     {
       path: 'biases-view',
       name: "Biases View"
-    }, 
+    },
     {
       path: 'customer-view',
       name: "Customer View"
-    },
-    {
-      path: 'choose-industry',
-      name: "Choose Industry"
-    },
-    {
-      path: 'select-biases',
-      name: "Select Biases"
     },
     {
       path: 'select-customer',
@@ -51,20 +40,20 @@ export class AppComponent {
       // ]
     },
     {
-      path: 'select-metrics',
-      name: "Select Metrics"
-    },
-    {
       path: 'generate-metrics',
       name: "Generate Metrics"
     }
   ];
 
   displayedColumns: string[] = ['custId', 'custName', 'age', 'income', 'gender', 'metric1', 'metric2', 'metric3'];
-  
 
-  constructor(private router: Router){}
-  
+
+  constructor(private router: Router) { }
+
+  checkLoginDetails() {
+    this.loggedIn = true;
+  }
+
   // toggleSidenav(){
   //   this.sidenavFlag = !this.sidenavFlag;
   // }

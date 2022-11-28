@@ -18,11 +18,12 @@ import { GenerateMetricsComponent } from './generate-metrics/generate-metrics.co
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
+import { DataSelectionComponent } from './data-selection/data-selection.component';
   
 @NgModule({
   declarations: [
     AppComponent, HeaderComponent, SegmentViewComponent, BiasesViewComponent, CustomerViewComponent, DashboardComponent, ChooseIndustryComponent, SideBarComponent, UploadDataComponent, SelectMetricsComponent,
-    GenerateMetricsComponent, MenuComponent, LoginComponent
+    GenerateMetricsComponent, MenuComponent, LoginComponent,  DataSelectionComponent, DataSelectionComponent
   ],
   imports: [
     BrowserModule,

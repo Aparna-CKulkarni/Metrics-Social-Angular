@@ -1,23 +1,68 @@
-
-  <h1 class="h1"> Select Data Filters</h1>
-  <div> Variable </div>
-  <div class="upload-section">
-    <h4 class="h4">Select Industry 
-      <hr size="3" width="6.5%" color="red">  
-    </h4>
-    <form class="form-section">
+<div class="upload-section">
+  <h4 class="title-section">Select Data Filters
+    <hr size="3" width="6.5%" color="red">
+  </h4>
+  <form class="form-section">
+    <div class="col-div">
+      <p class="label-text">Variable</p>
+      <p class="label-text">Value</p>
+    </div>
+    <div class="col-div">
+      <div class="label-div">
+        <p class="label-text">Social Media Activity</p>
+      </div>
       <mat-form-field appearance="outline">
-        <mat-label>Industry</mat-label>
-        <mat-select name="industry" [(ngModel)]="selectedIndustry">
+        <mat-label class="label-text">Social Media Activity</mat-label>
+        <mat-select name="socialMediaActivity" [(ngModel)]="selectedSocialMediaActivity">
+          <mat-option *ngFor="let socialMediaActivity of socialMediaActivitiesList" [value]="socialMediaActivity.value">
+            {{socialMediaActivity.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-div">
+      <div class="label-div">
+        <p class="label-text">Location</p>
+      </div>
+      <mat-form-field appearance="outline">
+        <mat-label class="label-text">Location</mat-label>
+        <mat-select name="location" [(ngModel)]="selectedLocation">
+          <mat-option *ngFor="let location of locationList" [value]="location.value">
+            {{location.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-div">
+      <div class="label-div">
+        <p class="label-text">Number of Replies/Shares</p>
+      </div>
+      <mat-form-field appearance="outline">
+        <mat-label class="label-text">Number of Replies/Shares</mat-label>
+        <mat-select name="NoOfReplies" [(ngModel)]="selectedIndustry">
           <mat-option *ngFor="let industry of industryList" [value]="industry.value">
             {{industry.name}}
           </mat-option>
         </mat-select>
       </mat-form-field>
-    </form>
-    <span *ngIf="selectedIndustry">
-      <!-- <mat-icon class="next-arrow" (click)="navigatePage('choose-industry')">arrow_forward</mat-icon> -->
-      <button mat-button class="next-button" (click)="navigatePage('select-metrics')">Next</button>
-    </span>
-  </div>
+    </div>
+    <div class="col-div">
+      <div class="label-div">
+        <p class="label-text">Interests</p>
+      </div>
+      <mat-form-field appearance="outline">
+        <mat-label class="label-text">Interests</mat-label>
+        <mat-select name="interests" [(ngModel)]="selectedIndustry">
+          <mat-option *ngFor="let industry of industryList" [value]="industry.value">
+            {{industry.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
 
+  </form>
+  <span *ngIf="selectedIndustry">
+    <!-- <mat-icon class="next-arrow" (click)="navigatePage('choose-industry')">arrow_forward</mat-icon> -->
+    <button mat-button class="next-button" (click)="navigatePage('select-metrics')">Next</button>
+  </span>
+</div>

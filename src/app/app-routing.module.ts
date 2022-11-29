@@ -4,6 +4,7 @@ import { BiasesViewComponent } from './biases-view/biases-view.component';
 import { ChooseIndustryComponent } from './choose-industry/choose-industry.component';
 import { CustomerViewComponent } from './customer-view/customer-view.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DataSelectionComponent } from './data-selection/data-selection.component';
 import { GenerateMetricsComponent } from './generate-metrics/generate-metrics.component';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
@@ -39,7 +40,7 @@ const routes: Routes = [
   },
   {
     path: 'choose-industry',
-    component: ChooseIndustryComponent
+    component: DataSelectionComponent
   },
   {
     path: 'select-metrics',

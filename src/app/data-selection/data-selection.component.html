@@ -35,15 +35,16 @@
     </div>
     <div class="col-div">
       <div class="label-div">
-        <p class="label-text">Number of Replies/Shares</p>
+        <p class="label-text">Number of Replies/Shares( per week)</p>
       </div>
       <mat-form-field appearance="outline">
         <mat-label class="label-text">Number of Replies/Shares</mat-label>
-        <mat-select name="NoOfReplies" [(ngModel)]="selectedIndustry">
+        <!-- <mat-select name="NoOfReplies" [(ngModel)]="selectedIndustry">
           <mat-option *ngFor="let industry of industryList" [value]="industry.value">
             {{industry.name}}
           </mat-option>
-        </mat-select>
+        </mat-select> -->
+        <input matInput type="number" min=0 max=50/>
       </mat-form-field>
     </div>
     <div class="col-div">
@@ -52,9 +53,9 @@
       </div>
       <mat-form-field appearance="outline">
         <mat-label class="label-text">Interests</mat-label>
-        <mat-select name="interests" [(ngModel)]="selectedIndustry">
-          <mat-option *ngFor="let industry of industryList" [value]="industry.value">
-            {{industry.name}}
+        <mat-select name="interests" [(ngModel)]="selectedInterest">
+          <mat-option *ngFor="let interest of InterestList" [value]="interest.value">
+            {{interest.name}}
           </mat-option>
         </mat-select>
       </mat-form-field>

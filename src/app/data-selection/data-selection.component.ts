@@ -46,6 +46,25 @@ export class DataSelectionComponent implements OnInit {
         name: 'Paris',
         value: 'paris'
       }
+    ];
+
+    this.InterestList = [
+      {
+        name: 'Musical Interest',
+        value: 'musical'
+      },
+      {
+        name: 'Sports Enthusiast',
+        value: 'sports'
+      },   
+      {
+        name: 'Movie Buff',
+        value: 'movies'
+      },
+      {
+        name: 'Geek',
+        value: 'geek'
+      }
     ]
   }
 

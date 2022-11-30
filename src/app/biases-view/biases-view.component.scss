@@ -29,7 +29,7 @@
     height: 48%;
 }
 
-.text-white{
+.text-white {
     color: rgb(77, 94, 204);
     line-height: 1.5;
     margin-top: 15px !important;
@@ -37,17 +37,14 @@
     text-align: justify;
     //font-weight: bold;
     font-style: italic;
-    font-family:  Calibri;
+    font-family: Calibri;
     font-size: medium;
-   //align-items:center;
-    
-    //text-align: center;
-   
+
 }
 
 .mat-divider {
     display: block;
-    margin: 0;
+    margin: 0 4vw;
     border-top-width: 1px;
     border-top-style: solid;
     border-top-color: #f44336;
@@ -56,66 +53,59 @@
 
 .mat-card .mat-divider-horizontal {
     position: absolute;
-    left: 22%;
     width: 50%;
 }
 
-
-.card-title{
-   
-    margin-left: 3rem;
-
-    border-bottom: 4px solid red;
-    
-    line-height: 4;
-    padding: 1 1 1px;
-
-}
-
-
 .images{
-
-margin-left:40%;
+    margin: 0 45%;
 }
-.Anchoring-bias1{
-    
+
+.Anchoring-bias1 {
+
     margin-top: 40px;
     text-align: center;
     font-size: 50px;
-    font-weight :bold;
-    color:hsl(15, 100%, 50%);
+    font-weight: bold;
+    color: hsl(15, 100%, 50%);
 }
-.Anchoring-bias2{
-    margin-top: 150px;
+
+.Anchoring-bias2 {
+    margin-top: 50px;
     margin-block-end: 100px;
     margin-block-end: 20px;
-  
+
     font-size: 18px;
     color: #4D9BCC;
     text-align: justify;
     font-style: italic;
-    font-family:  Calibri;
+    font-family: Calibri;
 
 }
-.Anchoring-bias3{
+
+.Anchoring-bias3 {
     margin-block-start: 20px;
-   
+
     text-decoration: underline;
     font-size: 14px;
     line-height: 1.8;
     font-weight: bold;
     text-align: justify;
-  
-    color:  #4D9BCC;
+
+    color: #4D9BCC;
 }
-.Anchoring-bias4{
+
+.Anchoring-bias4 {
     margin-bottom: 30px;
     margin-top: 20px;
     font-size: 14px;
     line-height: .8;
-   
-   text-align: justify;
-    
+
+    text-align: justify;
+
     font-weight: bold;
     color: #4D9BCC;
+}
+
+.card-title{
+    margin: 0 25px;
 }

@@ -1,4 +1,13 @@
 <title>Segment View</title>
+<mat-toolbar class="toolbar-layout">
+  <mat-toolbar-row>
+    <span class="options">Client Name</span>
+    <span class="options">Project Name</span>
+    <span class="options">Download Metrics</span>
+    <span class="options">Back to Data Upload</span>
+    <span class="options">Logout</span>
+  </mat-toolbar-row>
+</mat-toolbar>
 <div class="card-layout">
   <span>
     <mat-card class="single-card-section">
@@ -47,8 +56,8 @@
         </mat-card-header>
         <mat-card-content>
           <div style="width: 30px">
-            <mat-divider _ngcontent-c1="" class="mat-divider mat-divider-horizontal" role="separator"
-              aria-orientation="horizontal"></mat-divider>
+            <mat-divider class="mat-divider mat-divider-horizontal" role="separator" aria-orientation="horizontal">
+            </mat-divider>
           </div>
           <div>
             <img src="../../assets/images/anchor-bias.png" class="progress-bar-image" />

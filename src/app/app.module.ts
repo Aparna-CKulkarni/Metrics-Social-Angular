@@ -19,11 +19,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { DataSelectionComponent } from './data-selection/data-selection.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { OutputComponent } from './output/output.component';
   
 @NgModule({
   declarations: [
     AppComponent, HeaderComponent, SegmentViewComponent, BiasesViewComponent, CustomerViewComponent, DashboardComponent, ChooseIndustryComponent, SideBarComponent, UploadDataComponent, SelectMetricsComponent,
-    GenerateMetricsComponent, MenuComponent, LoginComponent,  DataSelectionComponent, DataSelectionComponent
+    GenerateMetricsComponent, MenuComponent, LoginComponent,  DataSelectionComponent, DataSelectionComponent, OutputComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +45,7 @@ import { DataSelectionComponent } from './data-selection/data-selection.componen
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

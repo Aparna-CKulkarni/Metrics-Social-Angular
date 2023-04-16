@@ -7,7 +7,7 @@
     <mat-form-field appearance="outline">
       <mat-label>Metrics for Biases & Heuristics
       </mat-label>
-      <mat-select name="metrics" [(ngModel)]="selectedMetric">
+      <mat-select name="metrics">
         <mat-option *ngFor="let metrics of metricsList" [value]="metrics.value">
           {{metrics.name}}
         </mat-option>
@@ -16,7 +16,7 @@
   </form>
   <div class="bottomline"> Use Recommended Metrics for Selected Industry
   </div>
-  <span *ngIf="selectedMetric">
+  <span>
     <!-- <mat-icon class="next-arrow" (click)="navigatePage('choose-industry')">arrow_forward</mat-icon> -->
     <button mat-button class="next-button" (click)="navigatePage('select-metrics')">Next</button>
   </span>

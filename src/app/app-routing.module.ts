@@ -8,6 +8,7 @@ import { DataSelectionComponent } from './data-selection/data-selection.componen
 import { GenerateMetricsComponent } from './generate-metrics/generate-metrics.component';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
+import { OutputComponent } from './output/output.component';
 import { SegmentViewComponent } from './segment-view/segment-view.component';
 import { SelectMetricsComponent } from './select-metrics/select-metrics.component';
 import { UploadDataComponent } from './upload-data/upload-data.component';
@@ -57,6 +58,10 @@ const routes: Routes = [
   {
     path: 'menu',
     component: MenuComponent
+  },
+  {
+    path: 'generate-metrics/show-results',
+    component: OutputComponent
   }
 ];
 

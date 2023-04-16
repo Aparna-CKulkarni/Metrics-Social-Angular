@@ -1,37 +1,77 @@
+.data-cotent{
+    background-color: white;
+    padding: 8px;
+    margin: 1rem;
+}
 
+.base-table{
+    table{
+        min-width: 100%;
+        border-collapse: separate;
+    }
+    .mat-header-cell{
+        border-right: 1px splid #FFFFFF;
+        border-bottom: none;
+        padding: 1opx 12px;
+        text-align: center;
+        color: black;
+        &:first-of-type{
+            padding: 10px 12px; 
+        }
+    }
 
+    .table-section-container{
+        min-width: 100%;
+        overflow: auto;
+        overflow-x: scroll;
+        max-height: 300px;
+    }
 
+    .mat-cell{
+        text-align: center;
+        border-width: 0px 1px 1px 0px;
+        border-style: solid;
+        &:last-child{
+            border-width:0px 0px 1px 0px;
+        }
+
+        &:first-of-type{
+            padding-left: 12px;
+        }
+    }
+}
 
 .table-section {
     height: 95%;
     display: flex;
     overflow: auto;
-    width: 75vw;
+    width: 80vw;
     margin: 1.5rem;
 }
 
 .mat-table {
     background-color: #bbcced;
-    width: 100%;
+    width: 80vw;
     border: 0.5px solid white;
     color: black;
+    overflow-x: scroll !important;
 }
 
 .mat-cell,
 .mat-header-cell {
     color: black;
     text-align: center;
-    font-size: medium;
+    font-size: small;
     border: 1px solid white;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
     height: 10px;
     border-radius: 5px;
 }
 
-tr.mat-header-row{
+tr.mat-header-row {
     background-color: #4472C4;
     color: white;
 }
@@ -40,6 +80,30 @@ tr:nth-child(even) {
     background-color: #dfe5f7;
 }
 
-// tr:nth-child(odd) {
-//     background-color: #8CA8DB;
-// }
+.hidetext {
+    -webkit-text-security: disc;
+}
+
+table {
+    min-width: 100%;
+    overflow-x: scroll !important;
+}
+
+.mat-column-tweet{
+    min-width: 200px !important;
+}
+
+.mat-column-tweet, .mat-column-name {
+    word-wrap: break-word !important;
+    font-size: 12px;
+    white-space: unset !important;
+    flex: 0 0 28% !important;
+    width: 28% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}

@@ -1,4 +1,5 @@
 import { Component,  OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,8 +12,11 @@ export class DataSelectionComponent implements OnInit {
   locationList = [];
   noOfRepliesList = [];
   InterestList = [];
+  selectedInterest;
+  selectedLocation
+  selectedSocialMediaActivity;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.socialMediaActivitiesList = [
@@ -66,6 +70,10 @@ export class DataSelectionComponent implements OnInit {
         value: 'geek'
       }
     ]
+  }
+
+  navigatePage(path){
+    this.router.navigate([path]);
   }
 
 }

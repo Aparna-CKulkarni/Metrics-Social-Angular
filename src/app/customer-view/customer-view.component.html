@@ -1,39 +1,168 @@
-<div class="table-section">
+<!-- <div class="table-section">
   <table mat-table [dataSource]="dataSource" class="mat-table">
-    <ng-container matColumnDef="custId">
-      <th mat-header-cell *matHeaderCellDef> Customer Id </th>
-      <td mat-cell *matCellDef="let element"> {{element.custId}} </td>
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+      <td mat-cell *matCellDef="let element" class="hidetext"> {{element.id}} </td>
     </ng-container>
-    <ng-container matColumnDef="custName">
-      <th mat-header-cell *matHeaderCellDef> Customer Name </th>
-      <td mat-cell *matCellDef="let element"> {{element.custName}} </td>
+    <ng-container matColumnDef="user_id">
+      <th mat-header-cell *matHeaderCellDef> User ID </th>
+      <td mat-cell *matCellDef="let element" class="hidetext"> {{element.user_id}} </td>
     </ng-container>
-    <ng-container matColumnDef="age">
-      <th mat-header-cell *matHeaderCellDef> Age </th>
-      <td mat-cell *matCellDef="let element"> {{element.age}} </td>
+    <ng-container matColumnDef="conversation_id">
+      <th mat-header-cell *matHeaderCellDef> Conversation ID </th>
+      <td mat-cell *matCellDef="let element" class="hidetext"> {{element.conversation_id}} </td>
     </ng-container>
-    <ng-container matColumnDef="income">
-      <th mat-header-cell *matHeaderCellDef> Income </th>
-      <td mat-cell *matCellDef="let element"> {{element.income}} </td>
+    <ng-container matColumnDef="username">
+      <th mat-header-cell *matHeaderCellDef> User Name </th>
+      <td mat-cell *matCellDef="let element" class="hidetext"> {{element.username}} </td>
     </ng-container>
-    <ng-container matColumnDef="gender">
-      <th mat-header-cell *matHeaderCellDef> Gender </th>
-      <td mat-cell *matCellDef="let element"> {{element.gender}} </td>
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element" class="hidetext"> {{element.name}} </td>
     </ng-container>
-    <ng-container matColumnDef="anchoringBias">
-      <th mat-header-cell *matHeaderCellDef> Anchoring Bias </th>
-      <td mat-cell *matCellDef="let element"> {{element.metric1}} </td>
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef> Date </th>
+      <td mat-cell *matCellDef="let element"> {{element.date}} </td>
     </ng-container>
-    <ng-container matColumnDef="availabilityHeuristic">
-      <th mat-header-cell *matHeaderCellDef> Availability Heuristic </th>
-      <td mat-cell *matCellDef="let element"> {{element.metric2}} </td>
+    <ng-container matColumnDef="time">
+      <th mat-header-cell *matHeaderCellDef> Time </th>
+      <td mat-cell *matCellDef="let element"> {{element.time}} </td>
     </ng-container>
-    <ng-container matColumnDef="innovatorIndex">
-      <th mat-header-cell *matHeaderCellDef> Innovator Index </th>
-      <td mat-cell *matCellDef="let element"> {{element.metric3}} </td>
+    <ng-container matColumnDef="tweet">
+      <th mat-header-cell *matHeaderCellDef> Tweet </th>
+      <td mat-cell *matCellDef="let element"> {{element.tweet}} </td>
     </ng-container>
-
+  
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
+</div> -->
+
+
+<div class="w-100 data-content mb-5">
+  <div class="base-table table-section-container">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="id" sticky>
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> ID </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element" class="hidetext"> {{element.id}} </td>
+      </ng-container>
+      <ng-container matColumnDef="user_id" sticky>
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> User ID </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element" class="hidetext"> {{element.user_id}} </td>
+      </ng-container>
+      <ng-container matColumnDef="conversation_id" sticky>
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Conversation ID </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element" class="hidetext"> {{element.conversation_id}}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="username" sticky>
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> User Name </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element" class="hidetext"> {{element.username}} </td>
+      </ng-container>
+      <ng-container matColumnDef="name" sticky>
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Name </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element" class="hidetext"> {{element.name}} </td>
+      </ng-container>
+      <ng-container matColumnDef="date">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Date </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.date}} </td>
+      </ng-container>
+      <ng-container matColumnDef="time">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Time </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.time}} </td>
+      </ng-container>
+      <ng-container matColumnDef="tweet">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Tweet </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.tweet}} </td>
+      </ng-container>
+      <ng-container matColumnDef="language">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Language </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.language}} </td>
+      </ng-container>
+      <ng-container matColumnDef="mentions">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Mentions </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.mentions}} </td>
+      </ng-container>
+      <ng-container matColumnDef="urls">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> URLs </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.urls}} </td>
+      </ng-container>
+      <ng-container matColumnDef="photos">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Photos </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.photos}} </td>
+      </ng-container>
+      <ng-container matColumnDef="replies_count">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Replies Count </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.replies_count}} </td>
+      </ng-container>
+      <ng-container matColumnDef="retweets_count">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Retweets Count </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.retweets_count}} </td>
+      </ng-container>
+      <ng-container matColumnDef="likes_count">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Likes Count </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.likes_count}} </td>
+      </ng-container>
+      <ng-container matColumnDef="hashtags">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Hashtags </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.hashtags}} </td>
+      </ng-container>
+      <ng-container matColumnDef="cashtags">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Cashtags </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.cashtags}} </td>
+      </ng-container>
+      <ng-container matColumnDef="link">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Link </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.link}} </td>
+      </ng-container>
+      <ng-container matColumnDef="retweet">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Retweet </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.retweet}} </td>
+      </ng-container>
+      <ng-container matColumnDef="quote_url">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Quote URL </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.quote_url}} </td>
+      </ng-container>
+      <ng-container matColumnDef="video">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Video </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.video}} </td>
+      </ng-container>
+      <ng-container matColumnDef="thumbnail">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Thumbnail </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.thumbnail}} </td>
+      </ng-container>
+      <ng-container matColumnDef="near">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Near </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.near}} </td>
+      </ng-container>
+      <ng-container matColumnDef="retweet_id">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Retweet Id </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.retweet_id}} </td>
+      </ng-container> 
+      <ng-container matColumnDef="reply_to">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Reply To </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.reply_to}} </td>
+      </ng-container> 
+      <ng-container matColumnDef="retweet_date">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Retweet Date </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.retweet_date}} </td>
+      </ng-container> 
+      <ng-container matColumnDef="translate">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Translate </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.translate}} </td>
+      </ng-container> 
+      <ng-container matColumnDef="trans_src">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Translate Source</th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.trans_src}} </td>
+      </ng-container> 
+      <ng-container matColumnDef="trans_dest">
+        <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Translate Destination </th>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.trans_dest}} </td>
+      </ng-container> 
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true;"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+    </table>
+  </div>
 </div>

@@ -17,16 +17,20 @@ export class AppComponent {
       name: "Main Menu"
     },
     {
-      path: 'segment-view',
-      name: "Segment View"
+      path: 'customer-view',
+      name: "Customer View"
+    },
+    {
+      path: 'generate-metrics',
+      name: "Generate Metrics"
     },
     {
       path: 'biases-view',
       name: "Biases View"
     },
     {
-      path: 'customer-view',
-      name: "Customer View"
+      path: 'segment-view',
+      name: "Segment View"
     },
     {
       path: 'select-customer',
@@ -40,9 +44,10 @@ export class AppComponent {
       // ]
     },
     {
-      path: 'generate-metrics',
-      name: "Generate Metrics"
-    }
+      path: 'generate-graphs',
+      name: "Generate Graphs"
+    },
+
   ];
 
   displayedColumns: string[] = ['custId', 'custName', 'age', 'income', 'gender', 'metric1', 'metric2', 'metric3'];

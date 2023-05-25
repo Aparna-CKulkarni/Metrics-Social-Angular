@@ -12,6 +12,7 @@ import { OutputComponent } from './output/output.component';
 import { SegmentViewComponent } from './segment-view/segment-view.component';
 import { SelectMetricsComponent } from './select-metrics/select-metrics.component';
 import { UploadDataComponent } from './upload-data/upload-data.component';
+import { GenerateGraphsComponent } from './generate-graphs/generate-graphs.component';
 
 const routes: Routes = [
   {
@@ -62,6 +63,10 @@ const routes: Routes = [
   {
     path: 'generate-metrics/show-results',
     component: OutputComponent
+  },
+  {
+    path: 'generate-graphs',
+    component: GenerateGraphsComponent
   }
 ];
 

@@ -63,7 +63,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Metrics-Social-Angular:build"
+            "browserTarget": "Metrics-Social-Angular:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {

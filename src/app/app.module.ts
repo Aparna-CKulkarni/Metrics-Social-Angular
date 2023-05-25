@@ -21,11 +21,14 @@ import { MenuComponent } from './menu/menu.component';
 import { DataSelectionComponent } from './data-selection/data-selection.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { OutputComponent } from './output/output.component';
+import { HttpClientModule } from '@angular/common/http';
+import { GenerateMetricsService } from './services/generate-metrics/generate-metrics.service';
+import { GenerateGraphsComponent } from './generate-graphs/generate-graphs.component';
   
 @NgModule({
   declarations: [
     AppComponent, HeaderComponent, SegmentViewComponent, BiasesViewComponent, CustomerViewComponent, DashboardComponent, ChooseIndustryComponent, SideBarComponent, UploadDataComponent, SelectMetricsComponent,
-    GenerateMetricsComponent, MenuComponent, LoginComponent,  DataSelectionComponent, DataSelectionComponent, OutputComponent
+    GenerateMetricsComponent, MenuComponent, LoginComponent,  DataSelectionComponent, DataSelectionComponent, OutputComponent, GenerateGraphsComponent
   ],
   imports: [
     BrowserModule,
@@ -45,9 +48,10 @@ import { OutputComponent } from './output/output.component';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [GenerateMetricsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

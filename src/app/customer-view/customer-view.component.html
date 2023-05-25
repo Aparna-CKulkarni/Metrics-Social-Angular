@@ -40,28 +40,31 @@
 
 
 <div class="w-100 data-content mb-5">
+  <!-- <div class="next-arrow">
+    <button mat-button (click)="navigatePage('generate-metrics')">Next</button>
+  </div> -->
   <div class="base-table table-section-container">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
       <ng-container matColumnDef="id" sticky>
         <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> ID </th>
-        <td style="min-width: 100px;" mat-cell *matCellDef="let element" class="hidetext"> {{element.id}} </td>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element" class="hidetext"> ****** </td>
       </ng-container>
       <ng-container matColumnDef="user_id" sticky>
         <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> User ID </th>
-        <td style="min-width: 100px;" mat-cell *matCellDef="let element" class="hidetext"> {{element.user_id}} </td>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element" class="hidetext">****** </td>
       </ng-container>
       <ng-container matColumnDef="conversation_id" sticky>
         <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Conversation ID </th>
-        <td style="min-width: 100px;" mat-cell *matCellDef="let element" class="hidetext"> {{element.conversation_id}}
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element" class="hidetext"> ******
         </td>
       </ng-container>
       <ng-container matColumnDef="username" sticky>
         <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> User Name </th>
-        <td style="min-width: 100px;" mat-cell *matCellDef="let element" class="hidetext"> {{element.username}} </td>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element" class="hidetext"> ****** </td>
       </ng-container>
       <ng-container matColumnDef="name" sticky>
         <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Name </th>
-        <td style="min-width: 100px;" mat-cell *matCellDef="let element" class="hidetext"> {{element.name}} </td>
+        <td style="min-width: 100px;" mat-cell *matCellDef="let element" class="hidetext"> ****** </td>
       </ng-container>
       <ng-container matColumnDef="date">
         <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Date </th>
@@ -138,31 +141,33 @@
       <ng-container matColumnDef="retweet_id">
         <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Retweet Id </th>
         <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.retweet_id}} </td>
-      </ng-container> 
+      </ng-container>
       <ng-container matColumnDef="reply_to">
         <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Reply To </th>
         <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.reply_to}} </td>
-      </ng-container> 
+      </ng-container>
       <ng-container matColumnDef="retweet_date">
         <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Retweet Date </th>
         <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.retweet_date}} </td>
-      </ng-container> 
+      </ng-container>
       <ng-container matColumnDef="translate">
         <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Translate </th>
         <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.translate}} </td>
-      </ng-container> 
+      </ng-container>
       <ng-container matColumnDef="trans_src">
         <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Translate Source</th>
         <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.trans_src}} </td>
-      </ng-container> 
+      </ng-container>
       <ng-container matColumnDef="trans_dest">
         <th style="min-width: 100px;" mat-header-cell *matHeaderCellDef> Translate Destination </th>
         <td style="min-width: 100px;" mat-cell *matCellDef="let element"> {{element.trans_dest}} </td>
-      </ng-container> 
+      </ng-container>
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true;"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-
     </table>
+  </div>
+  <div>
+    <button mat-button class="next-arrow" (click)="navigatePage('generate-metrics')">Next</button>
   </div>
 </div>

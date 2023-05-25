@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { timer } from 'rxjs';
+import { GenerateMetricsService } from '../services/generate-metrics/generate-metrics.service';
+import { Constants } from '../config/constants';
+import { AnchoringScore } from '../models/anchoring-score';
 const minute = 1000 * 60;
 
 @Component({
@@ -10,17 +13,26 @@ const minute = 1000 * 60;
   styleUrls: ['./generate-metrics.component.scss']
 })
 export class GenerateMetricsComponent implements OnInit {
-
-  constructor(private spinner: NgxSpinnerService, private router: Router) { }
+  public anchoringScoreData: AnchoringScore[];
+  constructor(private spinner: NgxSpinnerService, private router: Router, private generateMetricsService: GenerateMetricsService, private constants: Constants) { }
 
   ngOnInit() {
   }
 
   generateMetrics(){
     this.spinner.show();
-    setTimeout(() => {
-      this.spinner.hide();
+    let url = this.constants.API_ENDPOINT + '/import-csv';
+    this.generateMetricsService.getCSVData(url).subscribe(data =>{
+      console.log(data)
+      this.spinner.hide()
+      this.anchoringScoreData = data;
       this.router.navigate(['generate-metrics/show-results'])
-    }, 6000);
+    }, error =>{
+      console.log(error);
+    });
+    // setTimeout(() => {
+    //   this.spinner.hide();
+      
+    // }, 6000);
   } 
 }
